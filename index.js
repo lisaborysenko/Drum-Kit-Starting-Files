@@ -1,3 +1,4 @@
+numberOfDrumButtons = document.querySelectorAll(".drum").length;
 
 //detecting button press
 for (var i = 0; i < numberOfDrumButtons; i++) {
@@ -7,7 +8,7 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
   });
 }
 //detecting keyboard press
-document.addEventListener("keypress", function (event) {
+document.addEventListener("keydown", function (event) {
   playMusic(event.key);
 });
 
